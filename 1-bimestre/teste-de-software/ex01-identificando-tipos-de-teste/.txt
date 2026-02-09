@@ -1,0 +1,8 @@
+1. Testar uma função isolada é qual tipo de teste?
+R == Teste unitario
+
+2. Testar a API junto com o banco é qual tipo?
+R == Teste de integração 
+
+3. Qual a principal ideia do TDD?
+R == Ter controle do que esta fazendo por meio de testes
