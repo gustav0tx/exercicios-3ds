@@ -6,7 +6,7 @@ const adicionarTarefa = (tarefa) => {
 
 }
 
-const listarTarefas = () => {
+const listaTarefas = () => {
 
     return tarefas
 
@@ -20,6 +20,6 @@ const limpar = () => {
 
 module.exports = {
     adicionarTarefa,
-    listarTarefas,
+    listaTarefas,
     limpar
 }

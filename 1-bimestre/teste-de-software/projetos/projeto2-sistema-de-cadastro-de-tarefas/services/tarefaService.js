@@ -1,4 +1,4 @@
-const { adicionarTarefa, listarTarefas } = require('../controllers/tarefaController')
+const { adicionarTarefa, listaTarefas } = require('../controllers/tarefaController')
 
 const cadastrarTarefa = (descricao) => {
 
@@ -14,7 +14,7 @@ const cadastrarTarefa = (descricao) => {
 
 const totalTarefas = () => {
 
-    return listarTarefas().length
+    return listaTarefas().length
 
 }
 
