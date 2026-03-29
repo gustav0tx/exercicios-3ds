@@ -18,7 +18,14 @@ const totalTarefas = () => {
 
 }
 
+const listarTarefas = () => {
+
+    return listaTarefas()
+
+}
+
 module.exports = {
     cadastrarTarefa,
-    totalTarefas
+    totalTarefas,
+    listarTarefas
 }

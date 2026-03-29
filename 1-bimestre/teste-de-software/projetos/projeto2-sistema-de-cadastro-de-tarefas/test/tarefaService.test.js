@@ -1,4 +1,4 @@
-const { cadastrarTarefa, totalTarefas } = require('../services/tarefaService')
+const { cadastrarTarefa, totalTarefas, listarTarefas } = require('../services/tarefaService')
 const { limpar } = require('../controllers/tarefaController')
 
 beforeEach(() => {
@@ -26,6 +26,14 @@ describe('Testando service de tarefas', () => {
     test('Deve começar com o banco vazio', () => {
 
         expect(totalTarefas()).toBe(0)
+        
+    })
+
+    test('Deve conter tarefa cadastrada', () => {
+
+        cadastrarTarefa('estudar')
+
+        expect(listarTarefas()).toContainEqual({descricao: 'estudar'})
         
     })
 
